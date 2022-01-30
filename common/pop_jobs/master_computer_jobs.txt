@@ -12,8 +12,9 @@ master_computer_integrator = {
 		is_being_assimilated = no
 	}
 
+    possible_precalc = can_fill_ruler_job
+
     possible = {
-        ruler_job_check_trigger = yes
         is_organic_species = yes
         exists = owner
         owner = {
@@ -65,9 +66,10 @@ master_computer_admin = {
 		is_being_assimilated = no
 	}
 
+    possible_precalc = can_fill_ruler_job
+
     possible = {
-		ruler_job_check_trigger = yes
-        exists = owner
+		exists = owner
         owner = {
             has_authority = auth_master_computer
         }
@@ -226,9 +228,10 @@ master_computer_game_master = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_ruler_job
+
 	possible = {
-		ruler_job_check_trigger = yes
-        exists = owner
+		exists = owner
         owner = {
             has_authority = auth_master_computer
 			has_valid_civic = civic_master_computer_virtual_world
@@ -326,7 +329,7 @@ master_computer_strategist = {
 
 	triggered_planet_modifier = {
 		potential = {
-			owner = { has_non_swapped_tradition = tr_domination_judgment_corps }
+			owner = { has_active_tradition = tr_domination_judgment_corps }
 		}
 		modifier = {
 			planet_crime_add = -5

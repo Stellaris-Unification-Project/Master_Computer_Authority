@@ -42,7 +42,7 @@ building_master_computer_node = {
 		weight = 1
 		modifier = {
 			factor = 10
-			count_owned_pops = {
+			count_owned_pop = {
 				limit = {
 					is_pop_category = specialist
 				}
@@ -51,7 +51,7 @@ building_master_computer_node = {
 		}
 		modifier = {
 			factor = 0
-			count_owned_pops = { 
+			count_owned_pop = { 
 				limit = { 
 					OR = { 
 						is_unemployed = yes 
@@ -114,7 +114,7 @@ building_master_computer_advanced_node = {
 		weight = 1
 		modifier = {
 			factor = 10
-			count_owned_pops = {
+			count_owned_pop = {
 				limit = {
 					is_pop_category = specialist
 				}
@@ -132,7 +132,7 @@ building_master_computer_advanced_node = {
 		}
 		modifier = {
 			factor = 0
-			count_owned_pops = { 
+			count_owned_pop = { 
 				limit = { 
 					OR = { 
 						is_unemployed = yes 
@@ -192,7 +192,7 @@ building_master_computer_vr_node = {
 		}
 		modifier = {
 			factor = 0
-			count_owned_pops = { 
+			count_owned_pop = { 
 				limit = { 
 					OR = { 
 						is_unemployed = yes 

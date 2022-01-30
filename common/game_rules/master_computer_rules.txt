@@ -33,8 +33,7 @@ can_add_claim = {
 			owner = {
 				NOR = {
 					is_country_type = default
-					is_country_type = fallen_empire
-					is_country_type = awakened_fallen_empire
+					is_fallen_empire = yes
 				}
 			}
 		}
@@ -80,18 +79,14 @@ can_add_claim = {
 			exists = owner
 			owner = {
 				OR = {
-					has_valid_civic = civic_hive_devouring_swarm
-					has_valid_civic = civic_fanatic_purifiers
-					has_valid_civic = civic_machine_terminator
+					is_homicidal = yes
                     has_valid_civic = civic_machine_assimilator
                     has_valid_civic = civic_master_computer_purifier
 				}
 			}
 			root = {
 				NOR = {
-					has_valid_civic = civic_hive_devouring_swarm
-					has_valid_civic = civic_fanatic_purifiers
-					has_valid_civic = civic_machine_terminator
+					is_homicidal = yes
                     has_valid_civic = civic_machine_assimilator
                     has_valid_civic = civic_master_computer_purifier
 				}
@@ -105,14 +100,12 @@ can_get_claim_from_lost_system = {
 		fail_text = CANNOT_ADD_CLAIM_NOT_VALID_EMPIRE
 		OR = {
 			is_country_type = default
-			is_country_type = fallen_empire
-			is_country_type = awakened_fallen_empire
+			is_fallen_empire = yes
 		}
 		root = {
 			OR = {
 				is_country_type = default
-				is_country_type = fallen_empire
-				is_country_type = awakened_fallen_empire
+				is_fallen_empire = yes
 			}
 		}
 	}

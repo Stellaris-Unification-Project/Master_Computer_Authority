@@ -37,15 +37,9 @@ supremacist = {
 		is_being_purged = no
 		has_culture_shock = no
 		NOT = { has_trait = trait_nerve_stapled }
-		OR = {
-			has_ethic = ethic_xenophobe
-			has_ethic = ethic_fanatic_xenophobe
-		}
+		is_xenophobe = yes
 		owner = {
-			NOR = {
-				has_ethic = ethic_pacifist
-				has_ethic = ethic_fanatic_pacifist
-			}
+			is_pacifist = no
 		}
 		is_same_species = owner_species
 	}
@@ -108,8 +102,10 @@ supremacist = {
 		potential = {
 			exists = owner
 			owner = { 
-				NOT = { has_valid_civic = civic_fanatic_purifiers } 
-				NOT = { has_authority = auth_master_computer }
+				NOR = {
+					has_valid_civic = civic_fanatic_purifiers
+					has_authority = auth_master_computer
+				}
 			}
 		}
 		
@@ -154,8 +150,10 @@ supremacist = {
 		potential = {
 			exists = owner
 			owner = {
-				NOT = { has_valid_civic = civic_fanatic_purifiers }
-				NOT = { has_valid_civic = civic_master_computer_purifier }
+				NOR = {
+					has_valid_civic = civic_fanatic_purifiers
+					has_valid_civic = civic_master_computer_purifier
+				}
 				any_relation = {
 					#has_communications = root
 					is_country_type = primitive
@@ -181,8 +179,10 @@ supremacist = {
 		potential = {
 			exists = owner
 			owner = {
-				NOT = { has_valid_civic = civic_fanatic_purifiers }
-				NOT = { has_valid_civic = civic_master_computer_purifier }
+				NOR = {
+					has_valid_civic = civic_fanatic_purifiers
+					has_valid_civic = civic_master_computer_purifier
+				}
 				any_owned_pop = {
 					NOT = { is_same_species = owner_species }
 					is_robot_pop = no
@@ -219,8 +219,10 @@ supremacist = {
 		potential = {
 			exists = owner
 			owner = {
-				NOT = { has_valid_civic = civic_fanatic_purifiers }
-				NOT = { has_valid_civic = civic_master_computer_purifier }
+				NOR = {
+					has_valid_civic = civic_fanatic_purifiers
+					has_valid_civic = civic_master_computer_purifier
+				}
 				num_communications > 2
 			}
 		}
@@ -228,7 +230,7 @@ supremacist = {
 		trigger = {
 			owner = {
 				NOT = {
-					any_country = {
+					any_playable_country = {
 						is_country_type = default
 						has_communications = root.owner
 						OR = {
@@ -256,8 +258,10 @@ supremacist = {
 		potential = {
 			exists = owner
 			owner = {
-				NOT = { has_valid_civic = civic_fanatic_purifiers }
-				NOT = { has_valid_civic = civic_master_computer_purifier }
+				NOR = {
+					has_valid_civic = civic_fanatic_purifiers
+					has_valid_civic = civic_master_computer_purifier
+				}
 				any_relation = {
 					is_country_type = default
 					has_communications = root.owner

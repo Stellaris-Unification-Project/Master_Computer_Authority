@@ -38,8 +38,7 @@ master_computer_give_reward_for_ship = {
                 from = {
                     OR = {
                         is_crisis_faction = yes
-                        is_country_type = fallen_empire
-                        is_country_type = awakened_fallen_empire
+                        is_fallen_empire = yes
                     }
                 }
             }

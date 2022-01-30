@@ -37,10 +37,7 @@ xenoist = {
 		is_being_purged = no
 		has_culture_shock = no
 		NOT = { has_trait = trait_nerve_stapled }
-		OR = {
-			has_ethic = ethic_xenophile
-			has_ethic = ethic_fanatic_xenophile
-		}
+		is_xenophile = yes
 	}
 	
 	attraction = {
@@ -382,8 +379,7 @@ xenoist = {
 					NOT = { has_communications = prev}
 					OR = {
 						is_country_type = default
-						is_country_type = fallen_empire
-						is_country_type = awakened_fallen_empire
+						is_fallen_empire = yes
 					}
 				}
 			}

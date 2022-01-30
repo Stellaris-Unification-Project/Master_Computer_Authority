@@ -206,12 +206,10 @@ civic_master_computer_matchmaker = {
 				text = civic_tooltip_not_egalitarian
 				value = ethic_egalitarian
 				value = ethic_fanatic_egalitarian
-            }
-            NOR = {
-                text = civic_tooltip_not_xenophile
+				text = civic_tooltip_not_xenophile
 				value = ethic_xenophile
 				value = ethic_fanatic_xenophile
-            }
+			}
             OR = {
 				value = ethic_fanatic_authoritarian
 				value = ethic_authoritarian

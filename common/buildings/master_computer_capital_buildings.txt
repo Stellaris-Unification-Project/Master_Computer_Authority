@@ -161,7 +161,7 @@ building_master_computer_capital_1 = {
 		potential = {
 			exists = owner
 			owner = {
-				has_non_swapped_tradition = tr_domination_imperious_architecture
+				has_active_tradition = tr_domination_imperious_architecture
 			}					
 		}
 		modifier = {
@@ -213,7 +213,7 @@ building_master_computer_capital_1 = {
 		potential = {
 			exists = owner
 			owner = {
-				has_swapped_tradition = tr_domination_master_computer_deus_ex_machina
+				has_active_tradition = tr_domination_master_computer_deus_ex_machina
 			}
 		}
 		job_master_computer_admin_add = 1		
@@ -337,8 +337,10 @@ building_master_computer_capital_2 = {
 		potential = {
 			exists = owner
 			owner = {
-				NOT = { has_valid_civic = civic_master_computer_virtual_world }
-				NOT = { has_valid_civic = civic_master_computer_wargamer }
+				NOR = {
+					has_valid_civic = civic_master_computer_virtual_world
+					has_valid_civic = civic_master_computer_wargamer
+				}
 			}
 		}
 		job_enforcer_add = 2		
@@ -366,7 +368,7 @@ building_master_computer_capital_2 = {
 		potential = {
 			exists = owner
 			owner = {
-				has_non_swapped_tradition = tr_domination_imperious_architecture
+				has_active_tradition = tr_domination_imperious_architecture
 			}					
 		}
 		modifier = {
@@ -418,7 +420,7 @@ building_master_computer_capital_2 = {
 		potential = {
 			exists = owner
 			owner = {
-				has_swapped_tradition = tr_domination_master_computer_deus_ex_machina
+				has_active_tradition = tr_domination_master_computer_deus_ex_machina
 			}
 		}
 		job_master_computer_admin_add = 1		
@@ -552,8 +554,10 @@ building_master_computer_capital_3 = {
 		potential = {
 			exists = owner
 			owner = {
-				NOT = { has_valid_civic = civic_master_computer_virtual_world }
-				NOT = { has_valid_civic = civic_master_computer_wargamer }
+				NOR = {
+					has_valid_civic = civic_master_computer_virtual_world
+					has_valid_civic = civic_master_computer_wargamer
+				}
 			}
 		}
 		job_enforcer_add = 3
@@ -580,7 +584,7 @@ building_master_computer_capital_3 = {
 		potential = {
 			exists = owner
 			owner = {
-				has_non_swapped_tradition = tr_domination_imperious_architecture
+				has_active_tradition = tr_domination_imperious_architecture
 			}					
 		}
 		modifier = {
@@ -632,7 +636,7 @@ building_master_computer_capital_3 = {
 		potential = {
 			exists = owner
 			owner = {
-				has_swapped_tradition = tr_domination_master_computer_deus_ex_machina
+				has_active_tradition = tr_domination_master_computer_deus_ex_machina
 			}
 		}
 		job_master_computer_admin_add = 1		
@@ -777,7 +781,7 @@ building_master_computer_hab_capital_1 = {
 		potential = {
 			exists = owner
 			owner = {
-				has_swapped_tradition = tr_domination_master_computer_deus_ex_machina
+				has_active_tradition = tr_domination_master_computer_deus_ex_machina
 			}
 		}
 		job_master_computer_admin_add = 1		
@@ -929,7 +933,7 @@ building_master_computer_hab_capital_2 = {
 		potential = {
 			exists = owner
 			owner = {
-				has_swapped_tradition = tr_domination_master_computer_deus_ex_machina
+				has_active_tradition = tr_domination_master_computer_deus_ex_machina
 			}
 		}
 		job_master_computer_admin_add = 1		
@@ -1073,7 +1077,7 @@ building_master_computer_resort_capital_1 = {
 		potential = {
 			exists = owner
 			owner = {
-				has_swapped_tradition = tr_domination_master_computer_deus_ex_machina
+				has_active_tradition = tr_domination_master_computer_deus_ex_machina
 			}
 		}
 		job_master_computer_admin_add = 1		
@@ -1215,7 +1219,7 @@ building_master_computer_resort_capital_2 = {
 		potential = {
 			exists = owner
 			owner = {
-				has_swapped_tradition = tr_domination_master_computer_deus_ex_machina
+				has_active_tradition = tr_domination_master_computer_deus_ex_machina
 			}
 		}
 		job_master_computer_admin_add = 1		
@@ -1314,7 +1318,7 @@ building_master_computer_slave_capital_1 = {
 		potential = {
 			exists = owner
 			owner = {
-				has_swapped_tradition = tr_domination_master_computer_deus_ex_machina
+				has_active_tradition = tr_domination_master_computer_deus_ex_machina
 			}
 		}
 		job_master_computer_admin_add = 1		
@@ -1395,7 +1399,7 @@ building_master_computer_slave_capital_2 = {
 		potential = {
 			exists = owner
 			owner = {
-				has_swapped_tradition = tr_domination_master_computer_deus_ex_machina
+				has_active_tradition = tr_domination_master_computer_deus_ex_machina
 			}
 		}
 		job_master_computer_admin_add = 1		
